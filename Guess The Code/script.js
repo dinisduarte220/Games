@@ -15,6 +15,8 @@ function iniciar() {
     mostrar_posicaoErrada = document.getElementById('checkBox_posicaoErrada').checked
     mainMenu.style.display = 'none'
     jogoDisplay.style.display = 'block'
+    tentativas = 0
+    document.getElementById('tentativas').innerText = "Guesses: " + tentativas
     jogoAcabado = false
 
     while (input_usuario.lastChild) {
