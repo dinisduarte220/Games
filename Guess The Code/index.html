@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='shortcut icon' href='IMG/icon.ico' type='image/x-icon'>
+    <script src='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js'></script>
+    <script src='https://kit.fontawesome.com/207c253573.js' crossorigin='anonymous'></script>
+    <title>Guess the Number</title>
+</head>
+<body>
+
+    <div id="menuPrincipal">
+        <label id="labelNumeros">Numbers: 4</label>
+        <br><br>
+        <input type="range" id="inputNumeros" min="3" max="8" value="4" oninput="alterarAlgarismos()">
+        <br><br>
+        <input type="checkbox" id="checkBox_posicaoErrada"> See numbers on wrong positions
+        <br><br>
+        <button onclick="iniciar()">Iniciar <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div id="jogoDisplay">
+        <div id="btnVoltar" onclick="menuPrincipal()"><i class="fa-regular fa-circle-left"></i> Back</div>
+        <div id="tentativas">Guesses: 0</div>
+        <div id="jogo">
+            <div id="usuarioInput">
+            </div>
+            <div id="tentativasAnteriores">
+            </div>
+        </div>
+    </div>
+    
+    <script src='script.js'></script>
+
+</body>
+</html>
